@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScrip</title>
+   <link rel="shortcut icon" href="icons8-calculadora-de-maçã-50.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora JS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">Calculadora JS</h1>
+    <div class="actions">
+      <button type="button" id="themeToggle" class="topbtn" aria-pressed="false" aria-label="Alternar tema claro/escuro">🌗 Tema</button>
+      <button type="button" id="clearHistory" class="topbtn" aria-label="Limpar histórico">🗑️ Limpar histórico</button>
+      <button type="button" id="roundToggle" class="topbtn" aria-pressed="false" aria-label="Alternar arredondamento bancário">⚖️ Arred. bancário</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="calc-wrap">
+      <div class="calculator" role="application" aria-label="Calculadora">
+        <div id="display" class="display" aria-live="polite">0</div>
+
+        <div class="keys">
+              <button type="button" class="key mem" data-action="MC">MC</button>
+  <button type="button" class="key mem" data-action="MR">MR</button>
+  <button type="button" class="key mem" data-action="Mplus">M+</button>
+  <button type="button" class="key mem" data-action="Mminus">M−</button>
+
+          <button type="button" class="key fn" data-action="clear">AC</button>
+          <button type="button" class="key fn" data-action="delete">DEL</button>
+          <button type="button" class="key fn" data-action="percent">%</button>
+          <button type="button" class="key op" data-action="operator" data-operator="/">÷</button>
+
+          <button type="button" class="key" data-digit="7">7</button>
+          <button type="button" class="key" data-digit="8">8</button>
+          <button type="button" class="key" data-digit="9">9</button>
+          <button type="button" class="key op" data-action="operator" data-operator="*">×</button>
+
+          <button type="button" class="key" data-digit="4">4</button>
+          <button type="button" class="key" data-digit="5">5</button>
+          <button type="button" class="key" data-digit="6">6</button>
+          <button type="button" class="key op" data-action="operator" data-operator="-">−</button>
+
+          <button type="button" class="key" data-digit="1">1</button>
+          <button type="button" class="key" data-digit="2">2</button>
+          <button type="button" class="key" data-digit="3">3</button>
+          <button type="button" class="key op" data-action="operator" data-operator="+">+</button>
+
+          <button type="button" class="key fn" data-action="invert">±</button>
+          <button type="button" class="key span-2" data-digit="0">0</button>
+          <button type="button" class="key" data-action="dot">.</button>
+          <button type="button" class="key equals" data-action="equals">=</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="history" aria-label="Histórico de cálculos">
+      <h2>Histórico</h2>
+      <ol id="historyList" class="history-list" role="list"></ol>
+      <p class="history-hint">Clique em um item para reutilizar o resultado.</p>
+    </aside>
+  </main>
+</body>
+</html>
