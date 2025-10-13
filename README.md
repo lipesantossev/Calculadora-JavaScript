@@ -2,6 +2,7 @@ Calculadora JS
 
 Uma calculadora de bolso moderna feita com HTML + CSS + JavaScript (sem frameworks). Suporta mouse e teclado, histórico de cálculos, memória (M+, M−, MR, MC), tema claro/escuro e arredondamento bancário (half-to-even) opcional.
 
+Acesse o resultado: https://calculadora-java-script-lovat.vercel.app/
 📸 Demo
 
 Abra o arquivo index.html no navegador ou publique no GitHub Pages (instruções abaixo).
